@@ -1,11 +1,21 @@
-# Song Promotion Kit Generator
+# 🎵 Song Promotion Kit Generator
+
+![GitHub](https://img.shields.io/github/license/jpapad/song-promotion-kit-generator)
+![Stars](https://img.shields.io/github/stars/jpapad/song-promotion-kit-generator)
+![GitHub last commit](https://img.shields.io/github/last-commit/jpapad/song-promotion-kit-generator)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jpapad/song-promotion-kit-generator/main/public/app-preview.png" alt="Song Promotion Kit Generator" width="600">
+</p>
 
 Μια React εφαρμογή που δημιουργεί αυτόματα περιεχόμενο για την προώθηση ενός τραγουδιού, βασισμένη σε πληροφορίες που παρέχει ο χρήστης.
 
-## Λειτουργίες
+## ✨ Λειτουργίες
 
-- Φόρμα εισαγωγής δεδομένων για το τραγούδι (τίτλος, καλλιτέχνης, περιγραφή, μουσικό είδος)
-- Αυτόματη δημιουργία περιεχομένου:
+- 📝 Φόρμα εισαγωγής δεδομένων για το τραγούδι (τίτλος, καλλιτέχνης, περιγραφή, μουσικό είδος)
+- 🤖 Υποστήριξη δύο AI APIs (OpenAI & Hugging Face)
+- 🌗 Light & Dark mode
+- 📊 Αυτόματη δημιουργία περιεχομένου:
   - YouTube Τίτλοι
   - YouTube Περιγραφή
   - YouTube Tags
@@ -13,28 +23,29 @@
   - Instagram & TikTok Captions
   - Reels/Shorts Captions
   - Ιδέα για Thumbnail
-- Αντιγραφή περιεχομένου με ένα κλικ
-- Προσαρμογή του ύφους ανάλογα με το μουσικό είδος
-- Πλήρως responsive σχεδιασμός για όλες τις συσκευές
+- 📋 Αντιγραφή περιεχομένου με ένα κλικ
+- 🎸 Προσαρμογή του ύφους ανάλογα με το μουσικό είδος
+- 📱 Πλήρως responsive σχεδιασμός για όλες τις συσκευές
+- 💾 Αποθήκευση ιστορικού προηγούμενων kits
 
-## Τεχνολογίες
+## 🛠️ Τεχνολογίες
 
-- React
-- TypeScript
-- Tailwind CSS για το styling
-- OpenAI API για την παραγωγή περιεχομένου
-- Hugging Face API ως εναλλακτική επιλογή
+- [React](https://reactjs.org/) - UI Library
+- [TypeScript](https://www.typescriptlang.org/) - Type Safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [OpenAI API](https://openai.com/) - Προηγμένη παραγωγή περιεχομένου
+- [Hugging Face API](https://huggingface.co/) - Εναλλακτική επιλογή AI
 
-## Εγκατάσταση
+## 📥 Εγκατάσταση
 
 1. Κλωνοποιήστε το repository:
-```
-git clone https://github.com/yourusername/song-promotion-kit-generator.git
+```bash
+git clone https://github.com/jpapad/song-promotion-kit-generator.git
 cd song-promotion-kit-generator
 ```
 
 2. Εγκαταστήστε τις εξαρτήσεις:
-```
+```bash
 npm install
 ```
 
@@ -50,13 +61,24 @@ npm install
    - Για το Hugging Face API, εγγραφείτε στο [Hugging Face](https://huggingface.co/) για να αποκτήσετε ένα API κλειδί
 
 4. Εκκινήστε την εφαρμογή:
-```
+```bash
 npm start
 ```
 
 5. Ανοίξτε [http://localhost:3000](http://localhost:3000) στον browser σας.
 
-## Υλοποίηση API
+## 📱 Demo & Screenshots
+
+### Dark Mode
+<img src="https://raw.githubusercontent.com/jpapad/song-promotion-kit-generator/main/public/dark-mode.png" alt="Dark Mode" width="600">
+
+### Light Mode
+<img src="https://raw.githubusercontent.com/jpapad/song-promotion-kit-generator/main/public/light-mode.png" alt="Light Mode" width="600">
+
+### Mobile View
+<img src="https://raw.githubusercontent.com/jpapad/song-promotion-kit-generator/main/public/mobile-view.png" alt="Mobile View" width="300">
+
+## 🔄 Υλοποίηση API
 
 Η εφαρμογή μπορεί να χρησιμοποιήσει είτε το Hugging Face API είτε το OpenAI API για την παραγωγή περιεχομένου:
 
@@ -73,60 +95,60 @@ npm start
 ### Fallback
 - Η εφαρμογή διαθέτει ένα μηχανισμό fallback που παράγει περιεχόμενο τοπικά όταν δεν υπάρχει API κλειδί ή όταν υπάρχει σφάλμα στην κλήση API
 
-## Μελλοντικές Βελτιώσεις
+## 🚀 Deployment
 
-- Προσθήκη περισσότερων μουσικών ειδών
-- Δυνατότητα αποθήκευσης και εξαγωγής των αποτελεσμάτων σε PDF
-- Ενσωμάτωση με πλατφόρμες κοινωνικών δικτύων για άμεση δημοσίευση
-- Επιλογή γλώσσας (Αγγλικά/Ελληνικά)
+Μπορείτε εύκολα να κάνετε deploy την εφαρμογή σε διάφορες πλατφόρμες:
 
-## Σημείωση
+### Vercel
+```bash
+npm install -g vercel
+vercel
+```
 
-Αυτή η εφαρμογή προσομοιώνει την κλήση AI API για λόγους επίδειξης. Σε πραγματικό περιβάλλον παραγωγής, θα πρέπει να υλοποιηθεί ένα backend που θα διαχειρίζεται με ασφάλεια τα API κλειδιά και τις κλήσεις προς το OpenAI API.
+### Netlify
+```bash
+npm install -g netlify-cli
+netlify deploy
+```
 
-# Getting Started with Create React App
+## 📈 Μελλοντικές Βελτιώσεις
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [ ] Προσθήκη περισσότερων μουσικών ειδών
+- [ ] Δυνατότητα αποθήκευσης και εξαγωγής των αποτελεσμάτων σε PDF
+- [ ] Ενσωμάτωση με πλατφόρμες κοινωνικών δικτύων για άμεση δημοσίευση
+- [ ] Επιλογή γλώσσας (Αγγλικά/Ελληνικά)
+- [ ] Προσθήκη περισσότερων APIs
+- [ ] Βελτιωμένο ιστορικό και οργάνωση των promotion kits
 
-## Available Scripts
+## 📃 Διαθέσιμα Scripts
 
-In the project directory, you can run:
+Στον κατάλογο του project, μπορείτε να εκτελέσετε:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Εκτελεί την εφαρμογή σε development mode.\
+Ανοίξτε [http://localhost:3000](http://localhost:3000) για να τη δείτε στον browser.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Εκτελεί τα tests σε interactive watch mode.\
+Δείτε την ενότητα για [running tests](https://facebook.github.io/create-react-app/docs/running-tests) για περισσότερες πληροφορίες.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Δημιουργεί την εφαρμογή για production στο φάκελο `build`.\
+Βελτιστοποιεί το React για καλύτερη απόδοση.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🤝 Συνεισφορά
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Συνεισφορές, issues και feature requests είναι ευπρόσδεκτα! Δείτε το [CONTRIBUTING.md](CONTRIBUTING.md) για οδηγίες.
 
-### `npm run eject`
+## 📜 Άδεια Χρήσης
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Distributed under the MIT License. Δείτε το [LICENSE](LICENSE) για περισσότερες πληροφορίες.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📞 Επικοινωνία
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Giannis Papadimitriou - [@jpapad](https://github.com/jpapad)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Project Link: [https://github.com/jpapad/song-promotion-kit-generator](https://github.com/jpapad/song-promotion-kit-generator)
